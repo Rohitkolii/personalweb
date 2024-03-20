@@ -1,0 +1,111 @@
+.Headercontainer{
+    width: 100%;
+    /* height: 100vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.377)),
+    url('/images/bg3.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+
+.inner_Header{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.col1 h1{
+    text-transform: uppercase;
+    font-size: 45px;
+    color: white;
+}
+
+.col1 p{
+    width: 70%;
+    color: rgb(241, 241, 241);
+    font-size: 15px;
+}
+
+.buttoncon{
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.buttoncon a, .col2 form button{
+    background-color: rgb(3, 192, 129);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.col2 form{
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgb(209, 209, 209);
+}
+
+.col2 form p{
+    color: rgb(3, 192, 129);
+}
+
+.col2 form .row{
+    display: flex;
+    gap: 10px;
+}
+.col2 form .row .col{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.col2 form .row .col input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 3px;
+    padding: 0 10px;
+    color: rgb(73, 73, 73);
+    margin-top: 5px;
+}
+
+.col2 form .row .col textarea{
+    width: 100%;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 3px;
+    padding: 10px 10px;
+    color: rgb(73, 73, 73);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+.col2 form .row .col input, .col2 form .row .col textarea{
+    outline: transparent;
+    /* border: 1px solid rgb(206, 206, 206);
+    border-radius: 3px;*/
+} 
+
+
+@media only screen and (max-width: 900px) {
+    .col2 form{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .inner_Header{
+        grid-template-columns: 1fr;
+    }
+
+    .col2 form{
+        width: 100%;
+    }
+}
