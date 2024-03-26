@@ -5,7 +5,7 @@
     align-items: center;
     /* padding: 30px 0; */
     width: 90%;
-    margin: auto;
+    margin: 50px auto;
 }
 
 .col img{
@@ -28,4 +28,34 @@
 .col a{
     color: black;
     font-size: 18px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .row{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .row{
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        gap:0px;
+        align-items: center;
+        /* padding: 30px 0; */
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .col img{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .col img{
+        width: 90%;
+    }
 }

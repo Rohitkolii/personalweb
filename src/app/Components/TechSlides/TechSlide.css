@@ -43,3 +43,13 @@
   .swiper-slide img:hover{
     transform: scale(115%);
   }
+
+  @media only screen and (max-width: 650px) {
+    .swiper-slide img {
+      width: 40px;
+    }
+
+    .swiper {
+      height: 100px;
+    }
+}

@@ -7,6 +7,7 @@ import Services from "./Components/Services/Services";
 import Info from "./Components/Info/Info";
 import Projects from "./Components/Projects/Projects";
 import Footer from "./Components/Footer/Footer";
+import Testimonials from "./Components/Testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <Info />
       <Projects />
+      {/* <Testimonials /> */}
       <Footer />
     </>
   );

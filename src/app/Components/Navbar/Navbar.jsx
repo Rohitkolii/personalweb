@@ -24,10 +24,10 @@ const Navbar = () => {
         </div>
         <div className={!menu ? Styles.navlinks : Styles.mobnavlinks}>
             <ul>
-                <li><Link onClick={()=> setactive('home')} href='/' className={active == 'home' ? Styles.active : ''}>Home</Link></li>
-                <li><Link onClick={()=> setactive('work')} href='/' className={active == 'work' ? Styles.active : ''}>Work</Link></li>
-                <li><Link onClick={()=> setactive('review')} href='/' className={active == 'review' ? Styles.active : ''}>Review</Link></li>
-                <li><Link onClick={()=> setactive('contact')} href='/' className={active == 'contact' ? Styles.active : ''}>Contact</Link></li>
+                <li><Link onClick={()=> setactive('home')} href='/'>Home</Link></li>
+                <li><Link onClick={()=> setactive('work')} href='/'>Work</Link></li>
+                <li><Link onClick={()=> setactive('review')} href='about'>About</Link></li>
+                <li><Link onClick={()=> setactive('contact')} href='contact'>Contact</Link></li>
                 <li><Link href='btn'>Button</Link></li>
             </ul>
         </div>
