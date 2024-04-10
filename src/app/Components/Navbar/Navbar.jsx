@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Styles from './Navbar.module.css'
 import { IoIosMail } from "react-icons/io";
 import { FaPhoneVolume } from "react-icons/fa6";
@@ -13,11 +13,13 @@ const Navbar = () => {
     const [active, setactive] = useState('');
     const [menu, setmenu] = useState(false);
   
-  if(menu){
-    document.body.style.overflow = "hidden"
-  }else{
-    document.body.style.overflow = "scroll"
-  }
+    useEffect(()=> {
+      if(menu){
+        document.body.style.overflow = "hidden"
+      }else{
+        document.body.style.overflow = "scroll"
+      }
+    })
     return (
     <>
     <div className={Styles.topnav}>
