@@ -1,9 +1,11 @@
+'use client'
+
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
 import Footer from '../Components/Footer/Footer'
 import Styles from './About.module.css'
 
-const page = () => {
+const About = () => {
   return (
     <>
     <Navbar />
@@ -23,4 +25,4 @@ const page = () => {
   )
 }
 
-export default page
+export default About
