@@ -36,11 +36,11 @@ body {
   align-items: center;
   height: 100%;
   padding: 20px;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   gap: 50px;
-  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.419);
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.329);
   border-radius: 6px;
-  
+  cursor:grab
 }
 
 .Projects_Container .swiper-slide .imgcon{
@@ -84,6 +84,67 @@ body {
 }
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1100px) {
+  .Projects_Container .swiper {
+    width: 95%;
+  }
 
+  .Projects_Container .swiper-slide .imgcon{
+    width: 80%;
+  }
+  
+}
+
+@media only screen and (max-width: 900px) {
+  .Projects_Container .swiper {
+    width: 98%;
+  }
+  
+  .Projects_Container .swiper-slide .imgcon{
+    min-width: 30%;
+  }
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+  .Projects_Container .swiper-slide {
+    text-align: justify;
+    font-size: 15px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 0px;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.419);
+    border-radius: 6px;
+    
+  }
+  .Projects_Container .swiper-slide .imgcon{
+    width: 100%;
+  }
+
+  .Projects_Container .Projects_Container-fp{
+    font-size: 15px;
+    color: rgb(26, 26, 26);
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  .slide_context h3{
+    margin-top: 20px;
+  }
+
+  .Projects_Container{
+    margin-top: 80px;
+  }
 }

@@ -12,7 +12,13 @@ import { IoCloseOutline } from "react-icons/io5";
 const Navbar = () => {
     const [active, setactive] = useState('');
     const [menu, setmenu] = useState(false);
-  return (
+  
+  if(menu){
+    document.body.style.overflow = "hidden"
+  }else{
+    document.body.style.overflow = "scroll"
+  }
+    return (
     <>
     <div className={Styles.topnav}>
         <p> <IoIosMail /> 123@gmail.com</p>
@@ -20,15 +26,15 @@ const Navbar = () => {
     </div>
     <nav className={Styles.navcontainer}>
         <div className={Styles.logocol}>
-            <p>WM.</p>
+            <p><Link href='\'>WM.</Link></p>
         </div>
         <div className={!menu ? Styles.navlinks : Styles.mobnavlinks}>
             <ul>
                 <li><Link onClick={()=> setactive('home')} href='/'>Home</Link></li>
-                <li><Link onClick={()=> setactive('work')} href='/'>Work</Link></li>
+                <li><Link onClick={()=> setactive('work')} href='/works'>Work</Link></li>
                 <li><Link onClick={()=> setactive('review')} href='about'>About</Link></li>
                 <li><Link onClick={()=> setactive('contact')} href='contact'>Contact</Link></li>
-                <li><Link href='btn'>Button</Link></li>
+                <li><Link href='/'>Button</Link></li>
             </ul>
         </div>
 

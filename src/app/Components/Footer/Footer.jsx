@@ -15,7 +15,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div>
-                <p>All Right Reserved <Link href='/'>Webname</Link> 2024</p>
+                <p>@All Right Reserved <Link href='/'>Webname</Link> 2024</p>
             </div>
         </div>
     </footer>

@@ -1,23 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Styles from './Header.module.css'
 import Navbar from '../Navbar/Navbar'
 import Link from 'next/link'
 
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 const Header = () => {
+useEffect(()=>{
+    AOS.init({duration: 1000})
+  }, [])
   return (
+
     <div className={Styles.Headercontainer}>
         <Navbar />
         <section className={Styles.inner_Header}>
-            <div className={Styles.col1}>
+            <div data-aos="zoom-in-right" className={Styles.col1}>
                 <h1>Web Developement <br /> Services</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus illum perferendis aliquid temporibus, hic rerum?</p>
                 <div className={Styles.buttoncon}>
-                    <Link className='btn' href='/'>Know More</Link>
-                    <Link className='btn' href='/'>Contact</Link>
+                    <Link className='btn' href='/about'>Know More</Link>
+                    <Link className='btn' href='/contact'>Contact</Link>
                 </div>
             </div>
 
-            <div className={Styles.col2}>
+            <div data-aos="zoom-in-left" className={Styles.col2}>
 
             <form>
                 <p>contact us</p>

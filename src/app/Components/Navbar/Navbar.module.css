@@ -28,10 +28,11 @@
     font-size: 18px;
 }
 
-.logocol p{
+.logocol p, .logocol a{
     font-size: 25px;
     font-weight: 500;
     color: rgb(3, 192, 129);
+    text-decoration: none;
 }
 
 .navlinks ul{

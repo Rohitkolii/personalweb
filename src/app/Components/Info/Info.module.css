@@ -1,3 +1,6 @@
+.infocon{
+    overflow-x: hidden;
+}
 .row{
     display: flex;
     justify-content: space-between;

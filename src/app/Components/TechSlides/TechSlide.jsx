@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -8,12 +8,18 @@ import 'swiper/css/pagination';
 
 import './TechSlide.css';
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 // import required modules
 import { Pagination } from 'swiper/modules';
 
 export default function TechSlide() {
+  useEffect(()=>{
+    AOS.init({duration: 1000})
+  }, [])
   return (
-    <section style={{width: '95%', margin: 'auto'}}>
+    <section data-aos="fade-right" style={{width: '95%', margin: 'auto'}}>
     {/* <p style={{fontSize: 30,fontWeight: 600, marginTop: 20, textAlign: 'center', color: 'rgb(3, 192, 129)' }}>Technologies we use</p> */}
       <Swiper
         slidesPerView={6}
@@ -41,6 +47,7 @@ export default function TechSlide() {
         }}
         // modules={[Pagination]}
         className="mySwiper"
+        
       >
         <SwiperSlide><img src="/images/lang/react.png" alt="lang logo" /></SwiperSlide>
         <SwiperSlide><img src="/images/lang/next.png" alt="lang logo" /></SwiperSlide>

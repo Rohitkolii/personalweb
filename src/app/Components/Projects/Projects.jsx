@@ -4,7 +4,7 @@ import './Projects.css';
 
 //Swipper
 
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -19,12 +19,19 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Link from 'next/link';
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function App() {
+
+  useEffect(()=>{
+    AOS.init({duration: 1000})
+  }, [])
+
   return (
-    <section className='Projects_Container'>
-      <p>What we Delivered to out customers</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius magni ratione repudiandae iste labore vitae?</p>
+    <section className='Projects_Container' data-aos="fade-up" >
+      <p>What we Delivered to our customers</p>
+      <p className='Projects_Container-fp'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius magni ratione repudiandae iste labore vitae?</p>
       <div>
       <Swiper
         spaceBetween={30}
