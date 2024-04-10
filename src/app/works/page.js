@@ -7,7 +7,7 @@ const page = () => {
     <>
         <Navbar />
             <section>
-                
+              <h1>Nothing...</h1>
             </section>
         <Footer />
     </>
